@@ -1,0 +1,103 @@
+schema:User
+
+attributes: [username,email,password]
+
+1) API for creating user account
+
+    url:http://127.0.0.1:8000/api/register/
+
+    method:post
+
+    body:{
+        username,
+        email,
+        password
+        }
+
+    status:completed
+===============================================
+
+Schema:Product
+
+attributes=[title,description,size_object,category_object,brand_object,image,price]
+
+API 2) API for listing all products
+
+    url:http://127.0.0.1:8000/api/products/
+
+    method:GET
+
+    body:nill
+
+    status:completed
+
+API 3) API for fetching product details
+
+    url:http://127.0.0.1:8000/api/products/1/
+
+    method:GET
+
+    body:nill
+
+    status:completed
+==============================================
+
+Schema:BasketItem
+
+attributes=[basket_object,product_object,size_object,quantity]
+
+
+API 4) API for add product to cart
+
+    url:http://127.0.0.1:8000/api/products/1/cart/
+
+    method:POST
+
+    body:
+
+    status:pending
+
+API 5) API for  cart summary
+
+    url:http://127.0.0.1:8000/api/cart/all/
+
+    method:GET
+
+    body:nill
+
+    status:pending
+
+======================================================
+
+Schema:Order
+
+attributes=[user_object,basket_item_objects,delivery_address,phone,pin,email]
+
+
+
+API 6) API for place order
+
+    url:http://127.0.0.1:8000/api/order/
+
+    method:POST
+
+    body:
+
+    status:pending
+
+API 7) API for order summary
+
+    url:http://127.0.0.1:8000/api/order/summary/
+
+    method:POST
+
+    body:nill 
+
+    status:pending          
+
+
+
+
+
+
+
